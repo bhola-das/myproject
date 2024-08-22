@@ -16,6 +16,12 @@ app.use(express.static(path.join(__dirname,'public')));
 app.use(cookieParser());
 
 const PORT=process.env.PORT || 4000;
+mongoose.connect(process.env.MONGO_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log('Connected to MongoDB'))
+  .catch(err => console.error('MongoDB connection error:', err));
 
 
 app.get("/",(req,res)=>{

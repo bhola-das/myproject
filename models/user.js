@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-mongoose.connect('mongodb+srv://bholadas858:5gLjzp5oD0XTOgf0@notepad.we643.mongodb.net/?retryWrites=true&w=majority&appName=notepad');
+
 const userschema= new mongoose.Schema({
     username:String,
     name:String,
