@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    boxShadow: {
+                        neu: '-7px -7px 10px white, 5px 5px 10px rgba(0.585, 0, 0, 0.585)',
+                        innerNeu: 'inset -5px -5px 10px white, inset 5px 5px 10px rgba(0, 0, 0, 0.485)',
+                    },
+                },
+            },
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="w-full bg-gray-300 p-2 flex justify-between  ">
+            <a class="md:pl-4 text-red-500 font-bold hover:text-blue-500 font-size: 0.75rem " href="/about">About Devloper</a>
+            <h1 class="font-bold">Welcome!✍️</h1>
+            <a class="md:pr-4 text-blue-500 font-bold hover:text-red-500" href="/login">Login</a>
+    </div>
+
+   <div class="w-full h-screen bg-center md:bg-cover bg-no-repeat bg-contain bg-gray-500" style="background-image: url('https://snotes.de/wp-content/uploads/2020/03/Feature-graphic.jpg');" >
+    <div class="flex flex-row ">
+        <div class="h-screen w-[50%] "> </div>
+        <div class="h-screen w-[50%] md:mt-20 md:pr-5 flex justify-center items-center"> 
+            <div class="w-[24%] h-[20%] flex flex-col md:gap-5 gap-1 mt-10 md:mt-2 ">
+            <a class="md:px-2 md:py-2 py-1 bg-blue-500 text-center rounded-lg text-[0.5%] md:text-lg text-white hover:text-red-500 " href="/signup">Sign up</a>
+            <a class="md:px-2 md:py-2 py-1 bg-blue-500 text-center rounded-lg text-[0.5%] md:text-lg text-white hover:text-red-500 text-bold" href="/login">Sign in</a>
+
+            </div>
+        </div>
+
+    </div>
+   </div>
+   
+</body>
+</html>

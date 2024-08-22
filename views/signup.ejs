@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    boxShadow: {
+                        neu: '-7px -7px 10px white, 5px 5px 10px rgba(0.585, 0, 0, 0.585)',
+                        innerNeu: 'inset -5px -5px 10px white, inset 5px 5px 10px rgba(0, 0, 0, 0.485)',
+                    },
+                },
+            },
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="w-full h-screen flex flex-col md:flex-row justify-center items-center gap-3 mt-3 md:mb-1 bg-cover" style="background-image: url('https://t3.ftcdn.net/jpg/03/99/24/82/360_F_399248286_Ogm0T8CFeauN4Hdn42FqWfsCE02dJBbX.jpg')" >
+            <div class="flex items-center justify-center h-full rounded-lg m-5">
+                <div class="container  md:w-96 md:pl-10 md:pr-10 p-10 bg-gray-200 rounded-lg shadow-neu">
+                    <h1 class=" text-xl md:text-3xl font-bold mb-5 text-center">Sign Up</h1>
+                   <form action="/register" method="post" id="registerForm">
+                    <input type="text" placeholder="Username" name="username" class="w-full mb-3 p-2 rounded-full bg-gray-200 outline-none shadow-innerNeu"/>
+                    <input type="text" placeholder="Name" name="name" class="w-full mb-3 p-2 rounded-full bg-gray-200 outline-none shadow-innerNeu"/>
+                    <input type="text" placeholder="age" name="age" class="w-full mb-3 p-2 rounded-full bg-gray-200 outline-none shadow-innerNeu"/>
+                    <input type="email" placeholder="Email" name="email" class="w-full mb-3 p-2 rounded-full bg-gray-200 outline-none shadow-innerNeu"/>
+                    <input type="password" placeholder="Password" name="password" class="w-full mb-8 p-2 rounded-full bg-gray-200 outline-none shadow-innerNeu"/>
+                    <button class="w-[100%] h-10 rounded-full bg-blue-500 text-white font-bold mb-5 hover:text-red-500 shadow-neu">Sign Up</button>
+                </form>
+                    <a class="px-4 py-2 flex items-center justify-center font-bold hover:text-red-500 rounded-full bg-blue-500 text-white shadow-neu" href="/login">Sign In</a>
+                </div>
+            
+        </div>
+
+    </div>
+
+
+   <!--<div class="bg-zinc-900 w-full h-screen  pt-10 pl-10">
+    <h1 class="text-white font bold text-2xl mb-3">Create account</h1>
+    <form action="/register" method="post">
+        <input class="px-3 py-2 mb-2 rounded outline-none " type="text" placeholder="username" name="username">
+        <input  class="px-3  mb-2 py-2 rounded outline-none" type="text" placeholder="name" name="name">
+        <input  class="px-3  mb-2 py-2 rounded outline-none" type="email" placeholder="email" name="email">
+        <input  class="px-3  mb-2 py-2 rounded outline-none" type="password" placeholder="password" name="password">
+        <input  class="px-3  mb-2 py-2 rounded outline-none" type="age" placeholder="age" name="age">
+        <button class="px-2 py-2 mb-4 bg-blue-700 rounded-lg text-white">Create account</button>
+    </form>
+    <a class="px-2 py-2  bg-green-500 rounded " href="/login">Login</a>
+   </div>-->
+
+</body>
+</html>
